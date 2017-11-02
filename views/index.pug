@@ -1,3 +1,10 @@
 html
+  head
+    link(rel='stylesheet', href='/static/index.css')
   body
-    h1 #{title}
+    input#search(type='text')
+    button#submit
+    ul
+      each tweet in tweets
+        li=tweet.tweet_text
+    script(src='/static/index.js')
