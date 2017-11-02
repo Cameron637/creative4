@@ -13,12 +13,18 @@ body {
   font-size: 1.6rem;
   margin: 0;
   padding: 0 2rem;
+  text-align: center;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
-  text-align: center;
+header {
+  background-color: white;
+  left: 0;
+  padding: 0 2rem;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 .search {
@@ -30,11 +36,44 @@ label {
 }
 
 #searchBar {
+  border: 0.1rem solid lightgray;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-right: none;
   flex: 1 1 auto;
   margin: 0 0 0 1rem;
   padding: 0.5rem;
 }
 
 #searchButton {
+  background-color: #3e75c0;
+  border: 0.1rem solid #3e75c0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0.5rem;
+  border-left: none;
+  color: white;
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin-top: 33rem;
+}
+
+li {
+  margin: 2rem 0;
+}
+
+@media (min-width: 512px) {
+  ul {
+    margin-top: 27rem;
+  }
+}
+
+@media (min-width: 768px) {
+  ul {
+    margin-top: 22rem;
+  }
 }

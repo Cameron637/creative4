@@ -8,13 +8,14 @@ html(lang="en")
     link(rel="stylesheet", href="/static/index.css")
     title Flu Tracker
   body
-    h1 Flu Tracker
-    .search
-      label(for="searchBar") Filter by Symptoms:
-      input#searchBar(type="text", placeholder="fever, cough, sore throat, etc...")
-      button#searchButton Search
-    h2 #{listTitle} #{tweets.length}
-    h3 Note: These are real tweets by real people.  Profanity has been filtered.
+    header
+      h1 Flu Tracker
+      .search
+        label(for="searchBar") Filter by Symptoms:
+        input#searchBar(type="text", placeholder="fever, cough, sore throat, etc...")
+        button#searchButton Search
+      h2 #{listTitle} #{tweets.length}
+      h3 Note: These are real tweets by real people.  Profanity has been filtered.
     ul
       each tweet in tweets
         li=tweet
